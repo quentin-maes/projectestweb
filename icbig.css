@@ -1,0 +1,22 @@
+* {
+    margin : 0;
+}
+
+
+.cookie-banner {
+    padding: 0 100px;
+    color: white;
+    background-color: rgb(19,154,198);
+    transition: 400ms;
+    text-align: center;
+}
+.cookie-banner a {
+    color: yellow;
+}
+
+.cookieclose {
+    border: none;
+    font-size: 18px;
+    cursor:pointer;
+}
+
