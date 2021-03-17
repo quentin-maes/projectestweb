@@ -1,14 +1,60 @@
 * {
     margin : 0;
+    font-family: "roboto", sans-serif;
 }
 
+body {
+    background-color: rgb(59,59,59);
+}
+
+.navi {
+    width: 1250px;
+    margin: 10px auto; 
+    border: 1px;
+    border-style: solid;
+}
+
+.logo {
+    margin-left:  100px;
+}
+
+.pub {
+    margin: auto;
+    width: 40%;
+    padding: 20px;
+}
+
+.quickmenu {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    position: relative;
+    bottom: 100px;
+    left: 925px;
+}
+
+.quickmenu a {
+    color: white;
+    text-decoration: none;
+}
+
+.searchtop { 
+    display: flex;
+    justify-content: space-between;
+    width: 245px;
+    position: relative;
+    bottom: 60px;
+    left: 900px;
+
+}
 
 .cookie-banner {
-    padding: 0 100px;
+    padding: 10px 100px;
     color: white;
     background-color: rgb(19,154,198);
-    transition: 400ms;
-    text-align: center;
+    transition: 300ms;
+    width: 1250px;
+    margin: 0 auto; 
 }
 .cookie-banner a {
     color: yellow;
@@ -18,5 +64,9 @@
     border: none;
     font-size: 18px;
     cursor:pointer;
+    position: relative; 
+    left: 1330px;
+    top: -50px;
+    transition: 300ms;
+    background: transparent;
 }
-
