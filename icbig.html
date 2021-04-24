@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title> ICBig - A crazy webpage ! </title>
-        <script src="icbig.js"></script>
         <link rel="stylesheet" href="icbig.css">
         <link rel="shortcut icon" href="/img/favicon.png"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,7 +18,7 @@
             ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les modalités décrites dans notre
             <a href="https://images-gmi-pmc.edge-generalmills.com/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg" target="_blank">Charte Cookies</a>.
         </p>
-        <button class="cookieclose">&times;</button>
+        <button class="cookieclose" id="closeButton">&times;</button>
     </div>
    
 
@@ -34,19 +33,15 @@
                     <a class="clickfaq" href="FAQ">FAQ</a>
                 </div>
 
-                <div class="searchtop">
+                <form class="searchtop">
                     <input style="width: 20rem" type="text" placeholder="Entrez le nom du jeu ici">
-                    <button style="margin-left: 1rem" class="searchbutton">Search</button>
-                </div>
+                    <button type="submit" value="Search" style="margin-left: 1rem" class="searchbutton" method="GET">Search</button>
+                </form>
             </div>
         </div>
     </header>
         <body>
-            <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="RujkzusC"></script>
-            
-            <div class="fb-login-button" data-width="200" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
-            
+
             <div class="body-data">
                 <div class="body-data-left">
                  <p class="categories">
@@ -144,18 +139,18 @@
                         
                         <div class="formborder">
                         <div class="inputform">
-                        <input class="inpid" type="text" name="user_name" placeholder="Identifiant">
-                        <input class="inpid" type="email" name="email" placeholder="E-mail">
-                        <input class="inpid" type="email" name="email2" placeholder="Confirmer e-mail">
-                        <input class="inpid" type="password" name="password" placeholder="Mot de passe">
+                        <input class="inpid" type="text" name="user_name" placeholder="Identifiant" minlength="4" maxlength="15" required>
+                        <input class="inpid" type="email" name="email" placeholder="E-mail" required maxlength="32">
+                        <input class="inpid" type="email" name="email2" placeholder="Confirmer e-mail" required maxlength="32">
+                        <input class="inpid" type="password" name="password" placeholder="Mot de passe" required minlength="5" maxlength="32">
                             
                             </div>
                                 <label class="f1" for="birthday">
                                 Date de naissance :
                                 </label>
-                                <input class="f2" type="date" id="birthday" name="birthday">
+                                <input class="f2" type="date" id="birthday" name="birthday" required>
                             <br>
-                                <label class="f3" for="country">
+                                <label class="f3" for="country" required>
                                 Pays :
                                 </label>
                                     <select class="f4" id="country" name="country">
@@ -408,20 +403,106 @@
 
                                 
                                 </select><br>
-                                <input class="f5" type="radio" id="male" name="gender" value="homme">
+                                <input class="f5" type="radio" id="male" name="gender" value="homme" required>
                                 <label class="f6" for="male">Homme</label>
                                 <input class="f7" type="radio" id="female" name="gender" value="femme">
                                 <label class="f8" for="female">Femme</label><br>
                                  </div>
-                            <input class="f9" type="checkbox" id="checkcondition" name="checkcondition" value="checkedcondition">
+
+
+                                 <div class="social">
+                                    <div class="loginBtn loginBtn--facebook">
+                                        Login with Facebook
+                                    </div>
+                                      
+                                      <div class="loginBtn loginBtn--google">
+                                        Login with Google
+                                      </div>
+                                 </div>
+
+
+
+                            <input class="f9" type="checkbox" id="checkcondition" name="checkcondition" value="checkedcondition" required>
                             <label class="f10" for="submit"> J'accepte les <a href="/conditions/">Conditions d'utilisation</a> et la <a href="/policy/">Politique de confidentialité</a> de ICBig.</label><br>
                             <button class="f11" type="submit" >S'inscrire</button>
                         
+                
                     
                     </form>
-                    
-                    
-                    
+
+                <div class="video">
+                    <h3 class="cmtjouer">Comment jouer ?</h3>
+                    <div class="youtube"> 
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4OcXEbIpqjQ?start=151" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+                    </div>
+                </div>
+                
+                <div class="classement">
+                 <h3 class="classementtitre">
+                    Classement
+                 </h3>
+                 <p class="majauto">Mise à jours automatique dans 15 minutes.</p>
+                 <span class="tableau"><p class="meilleurscores">Meilleurs scores</p>
+
+                 <table class="table" CELLSPACING=0>
+                    <thead>
+                        <tr bgcolor="#7DABC1">
+                            <th>#</th>
+                            <th>Rank</th>
+                            <th>Pseudo</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr bgcolor="#DFFAB7">
+                            <td rowspan="3" class="top3">TOP 3</td>
+                            <td align="right">1</td>
+                            <td>KillerPlayer</td>
+                            <td align="right">7500</td>
+                        </tr>
+                        <tr bgcolor ="#DFFAB7">
+                        <td align="right">2</td>
+                        <td>TheFan</td>
+                        <td align="right">6500</td>
+                    </tr>
+                    <tr bgcolor ="#DFFAB7">
+                        <td align="right">3</td>
+                        <td>HatMan</td>
+                        <td align="right">6350</td>
+                    </tr>
+
+                    <tr bgcolor="#eee">
+                        <td class="upp">&#8599;</td>
+                        <td align="right">4</td>
+                        <td>Dilliger</td>
+                        <td align="right">4000</td>
+                    </tr>
+                    <tr bgcolor="#ddd">
+                        <td class="downn">&#8600;</td>
+                        <td align="right">5</td>
+                        <td>BillyBoy</td>
+                        <td align="right">3995</td>
+                    </tr>
+                    <tr bgcolor="#eee">
+                        <td class="downn">&#8600;</td>
+                        <td align="right">6</td>
+                        <td>HopeLess</td>
+                        <td align="right">3500</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor ="#7DABC1" colspan="4"><i>Last update: May 2017</i></td>
+                    </tr>
+                </span>
+
+                    </tbody>
+                </table>
+
+                </div>
+
             </div>
                 <a href="#" class="btnhaut"><img class="arrow" src="/img/arrow_upward.png" alt="Fleche pointant vers le haut."> Haut de page</a>
         </div>
@@ -442,5 +523,7 @@
         </p> 
 
     </footer>
+
+    <script src="icbig.js"></script>
             </body>
 </html>
