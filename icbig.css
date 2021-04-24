@@ -363,7 +363,7 @@ h2 {
 }
 .gratuit {
     font-weight: bold;
-font-style: italic;
+    font-style: italic;
 }
 .inputform {
     display: flex;
@@ -445,7 +445,7 @@ font-style: italic;
 }
 .f11 {
     position: relative;
-    bottom: 1.4em;
+    bottom: 1.3em;
     left: 9em;
     width: 6em;
     height: 2em;
@@ -599,6 +599,7 @@ th, td {
 .tableau {
     position: relative;
     top: 30px;
+    right:20px;
 }
 
 .top3 {

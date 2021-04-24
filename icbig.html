@@ -24,7 +24,7 @@
 
     <header>
         <div class="banner">
-            <img class="logo" src="/img/logo-icbig.png" alt="Logo du site">
+            <a href="/"><img class="logo" src="/img/logo-icbig.png" alt="Logo du site"></a>
             <img class="pub" src="/img/got.jpg" alt="Pub">
             <div class="menu">
                  <div class="quickmenu">
@@ -35,7 +35,7 @@
 
                 <form class="searchtop">
                     <input style="width: 20rem" type="text" placeholder="Entrez le nom du jeu ici">
-                    <button type="submit" value="Search" style="margin-left: 1rem" class="searchbutton" method="GET">Search</button>
+                    <button value="Search" style="margin-left: 1rem" class="searchbutton">Search</button>
                 </form>
             </div>
         </div>
@@ -46,13 +46,13 @@
                 <div class="body-data-left">
                  <p class="categories">
                     Categories</p>
-                    <img class="moviepic" src="img/movies.png">
+                    <img class="moviepic" src="img/movies.png" alt="Icone de cinema">
                 <a class="catmovies" href="/movies/">
                     Movies</a>
-                    <img class="musicpic" src="img/music.png">
+                    <img class="musicpic" src="img/music.png" alt="Image de musique">
                 <a class="catmusic" href="/music/">
                     Music</a>
-                    <img class="gamespic" src="img/games.png">
+                    <img class="gamespic" src="img/games.png" alt="Image de dés">
                 <a class="catgames" href="/games/">
                     Games</a>
                     <a class="catpuzzles" href="/games/puzzles/">
@@ -63,19 +63,19 @@
                     :Mazes</a>
                 <a class="catshows" href="/shows/">
                     Shows</a>
-                    <img class="showspic" src="img/shows.png">
+                    <img class="showspic" src="img/shows.png" alt="Image de spectacle">
                 <a class="catsoftware" href="/software/">
                     Software</a>
-                    <img class="softwarepic" src="img/software.png">
+                    <img class="softwarepic" src="img/software.png" alt="Image de téléphone">
                 <a class="catebooks" href="/books/">
                     Ebooks</a>
-                    <img class="ebookspic" src="img/books.png">
+                    <img class="ebookspic" src="img/books.png" alt="Image de livre">
                 <a class="catfaq" href="/faq/">
                     FAQ</a>
-                    <img class="faqpic" src="img/faq.png">
+                    <img class="faqpic" src="img/faq.png" alt="Image de foire aux questions">
                 <a class="catsignup" href="/signup/">
                     Sign Up</a>
-                    <img class="signuppic" src="img/signup.png">
+                    <img class="signuppic" src="img/signup.png" alt="Image de liste">
                     
                     <div class="testimonials">
                         Testimonials</div>
@@ -119,23 +119,17 @@
                     
                         </nav>
                     
-                    
-                    
-                    
-                    
-                    
-                    
                     <form action="result.php" class="form-content" method="POST">
                         <img class="keys" src="img/keys.png" alt="Une clé pointant vers le bas">
                         <h2>
                             Formulaire d'inscription</h2>
-                        <span class="signuptext"><p>
-                            Vous devez vous inscrire pour commencer à jouer. L'inscription est 
-                            <span class="gratuit">
-                                rapide et gratuite</span> !</p></span>
-                        <span class="signuptext2"><p>Vous êtes déjà membre ? <a href="/login/">
-                            Se connecter</a></p>
-                        </span>
+                            <span class="signuptext"><p>
+                                Vous devez vous inscrire pour commencer à jouer. L'inscription est 
+                                <span class="gratuit">
+                                    rapide et gratuite</span> !</p></span>
+                            <span class="signuptext2"><p>Vous êtes déjà membre ? <a href="/login/">
+                                Se connecter</a></p>
+                            </span>
                         
                         <div class="formborder">
                         <div class="inputform">
@@ -150,7 +144,7 @@
                                 </label>
                                 <input class="f2" type="date" id="birthday" name="birthday" required>
                             <br>
-                                <label class="f3" for="country" required>
+                                <label class="f3" for="country">
                                 Pays :
                                 </label>
                                     <select class="f4" id="country" name="country">
@@ -423,7 +417,7 @@
 
 
                             <input class="f9" type="checkbox" id="checkcondition" name="checkcondition" value="checkedcondition" required>
-                            <label class="f10" for="submit"> J'accepte les <a href="/conditions/">Conditions d'utilisation</a> et la <a href="/policy/">Politique de confidentialité</a> de ICBig.</label><br>
+                            <label class="f10" for="checkcondition"> J'accepte les <a href="/conditions/">Conditions d'utilisation</a> et la <a href="/policy/">Politique de confidentialité</a> de ICBig.</label><br>
                             <button class="f11" type="submit" >S'inscrire</button>
                         
                 
@@ -524,6 +518,6 @@
 
     </footer>
 
-    <script src="icbig.js"></script>
+            <script src="icbig.js"></script>
             </body>
 </html>
