@@ -12,7 +12,7 @@
         
 
     </head>
-    
+    <body>
     <div class="cookie-banner">
         <p class="cookie-banner-message">
             ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les modalités décrites dans notre
@@ -21,7 +21,7 @@
         <button class="cookieclose" id="closeButton">&times;</button>
     </div>
    
-
+    
     <header>
         <div class="banner">
             <a href="/"><img class="logo" src="/img/logo-icbig.png" alt="Logo du site"></a>
@@ -40,8 +40,7 @@
             </div>
         </div>
     </header>
-        <body>
-
+        
             <div class="body-data">
                 <div class="body-data-left">
                  <p class="categories">
@@ -123,13 +122,18 @@
                         <img class="keys" src="img/keys.png" alt="Une clé pointant vers le bas">
                         <h2>
                             Formulaire d'inscription</h2>
-                            <span class="signuptext"><p>
+                            <p class="signuptext">
+                                <span>
                                 Vous devez vous inscrire pour commencer à jouer. L'inscription est 
-                                <span class="gratuit">
-                                    rapide et gratuite</span> !</p></span>
-                            <span class="signuptext2"><p>Vous êtes déjà membre ? <a href="/login/">
-                                Se connecter</a></p>
-                            </span>
+                                <span class="gratuit">rapide et gratuite</span> 
+                                
+                                !</span>
+                            </p>
+                            <p class="signuptext2">
+                                <span>Vous êtes déjà membre ? 
+                                    <a href="/login/">Se connecter</a>
+                                </span>
+                            </p>
                         
                         <div class="formborder">
                         <div class="inputform">
@@ -428,7 +432,7 @@
                     <h3 class="cmtjouer">Comment jouer ?</h3>
                     <div class="youtube"> 
 
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4OcXEbIpqjQ?start=151" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/4OcXEbIpqjQ?start=151" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
@@ -440,11 +444,11 @@
                     Classement
                  </h3>
                  <p class="majauto">Mise à jours automatique dans 15 minutes.</p>
-                 <span class="tableau"><p class="meilleurscores">Meilleurs scores</p>
+                 <p class="meilleurscores">Meilleurs scores</p>
 
-                 <table class="table" CELLSPACING=0>
+                 <table class="table">
                     <thead>
-                        <tr bgcolor="#7DABC1">
+                        <tr class="tr1">
                             <th>#</th>
                             <th>Rank</th>
                             <th>Pseudo</th>
@@ -452,45 +456,45 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr bgcolor="#DFFAB7">
+                        <tr class="tr2">
                             <td rowspan="3" class="top3">TOP 3</td>
-                            <td align="right">1</td>
+                            <td class="align">1</td>
                             <td>KillerPlayer</td>
-                            <td align="right">7500</td>
+                            <td class="align">7500</td>
                         </tr>
-                        <tr bgcolor ="#DFFAB7">
-                        <td align="right">2</td>
+                        <tr class="tr2">
+                        <td class="align">2</td>
                         <td>TheFan</td>
-                        <td align="right">6500</td>
+                        <td class="align">6500</td>
                     </tr>
-                    <tr bgcolor ="#DFFAB7">
-                        <td align="right">3</td>
+                    <tr class="tr2">
+                        <td class="align">3</td>
                         <td>HatMan</td>
-                        <td align="right">6350</td>
+                        <td class="align">6350</td>
                     </tr>
 
-                    <tr bgcolor="#eee">
+                    <tr class="tr3">
                         <td class="upp">&#8599;</td>
-                        <td align="right">4</td>
+                        <td class="align">4</td>
                         <td>Dilliger</td>
-                        <td align="right">4000</td>
+                        <td class="align">4000</td>
                     </tr>
-                    <tr bgcolor="#ddd">
+                    <tr class="tr4">
                         <td class="downn">&#8600;</td>
-                        <td align="right">5</td>
+                        <td class="align">5</td>
                         <td>BillyBoy</td>
-                        <td align="right">3995</td>
+                        <td class="align">3995</td>
                     </tr>
-                    <tr bgcolor="#eee">
+                    <tr class="tr3">
                         <td class="downn">&#8600;</td>
-                        <td align="right">6</td>
+                        <td class="align">6</td>
                         <td>HopeLess</td>
-                        <td align="right">3500</td>
+                        <td class="align">3500</td>
                     </tr>
                     <tr>
-                        <td bgcolor ="#7DABC1" colspan="4"><i>Last update: May 2017</i></td>
+                        <td class="tr1" colspan="4"><i>Last update: May 2017</i></td>
                     </tr>
-                </span>
+                
 
                     </tbody>
                 </table>
@@ -516,8 +520,10 @@
            The purchase of a membership is not a license to download copyrighted material. Please do your part and respect copyrights.
         </p> 
 
+
+
     </footer>
 
             <script src="icbig.js"></script>
-            </body>
+        </body>
 </html>

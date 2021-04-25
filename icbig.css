@@ -355,11 +355,12 @@ h2 {
     margin: 0px 0px 20px 0px;
     
 }
+
 .signuptext {
-    margin: 0px 100px;
+  margin-bottom: 1rem;
 }
 .signuptext2{
-    margin: 0px 100px;
+    margin-bottom: 1rem;
 }
 .gratuit {
     font-weight: bold;
@@ -445,7 +446,7 @@ h2 {
 }
 .f11 {
     position: relative;
-    bottom: 1.3em;
+    bottom: 0.6em;
     left: 9em;
     width: 6em;
     height: 2em;
@@ -461,9 +462,14 @@ h2 {
 
 
 
-
 /* credit css : https://codepen.io/davidelrizzo/pen/vEYvyv  */
 
+
+iframe {
+    width: 560px;
+    height: 315px;
+    border: none;
+}
 
 .social {
     display: flex;
@@ -559,15 +565,36 @@ h2 {
     left: 33em;
 }
 
-.table {
+table {
     position: relative;
-    left: 39.7em;
+    left: 38.7em;
     width: 400px;
     text-align: center;
     border: 1px solid #333;
+    border-spacing : 0;
 
 }
 
+
+
+
+.tr1 {
+
+    background-color: #7DABC1;
+}
+.tr2 {
+    background-color: #DFFAB7;
+}
+.tr3 {
+    background-color: #eee;
+}
+.tr4 {
+    background-color: #ddd;
+}
+
+.align {
+    text-align: right;
+}
 
 th, td {
     border: 1px solid #333;
@@ -591,15 +618,10 @@ th, td {
 
 .meilleurscores {
     position: relative;
-    left: 42.5em;
+    left: 41.5em;
     margin: 10px 20px;
     font-weight: bold;
     font-size: 110%;
-}
-.tableau {
-    position: relative;
-    top: 30px;
-    right:20px;
 }
 
 .top3 {
@@ -650,6 +672,12 @@ footer {
     font-size: 75%;
     text-align: center;
     opacity: 50%;
+}
+
+.validator {
+    display: inline;
+    position: absolute;
+    right: 0px;
 }
 
 hr {
